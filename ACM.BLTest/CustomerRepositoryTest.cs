@@ -2,6 +2,7 @@
 using ACM.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace ACM.BLTest
@@ -88,7 +89,12 @@ namespace ACM.BLTest
 
             for (int i = 0; i < 1; i++)
             {
-
+                Assert.AreEqual(expected.AddressList[i].AddressLineOne, actual.AddressList[i].AddressLineOne);
+                Assert.AreEqual(expected.AddressList[i].AddressType, actual.AddressList[i].AddressType);
+                Assert.AreEqual(expected.AddressList[i].PostalCode, actual.AddressList[i].PostalCode);
+                Assert.AreEqual(expected.AddressList[i].City, actual.AddressList[i].City);
+                Assert.AreEqual(expected.AddressList[i].Country, actual.AddressList[i].Country);
+                Assert.AreEqual(expected.AddressList[i].Region, actual.AddressList[i].Region);
             }
 
 

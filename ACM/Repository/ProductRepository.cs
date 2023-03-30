@@ -8,11 +8,29 @@ namespace ACM.Repository
 {
     public class ProductRepository
     {
-        public bool Save()
+        public bool Save(Product product)
         {
-            //Code to save
+            var succes = true;
 
-            return true;
+            if (product.IsChanged)
+            {
+                if (product.IsValid)
+                {
+                    if (product.IsNew)
+                    {
+                        // call stored procedure
+                    }
+                    else
+                    {
+                        // call store procedure
+                    }
+                }
+                else
+                {
+                    succes = false;
+                }
+            }
+            return succes;
         }
 
         public Product Retrieve(int productId)
