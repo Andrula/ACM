@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase
     {
+        /* Constructors */
         public Customer()
         {
 
@@ -18,6 +19,8 @@ namespace ACM.BL
             CustomerId = customerId;
             AddressList = new List<Address>();
         }
+
+        /* Fields */
 
         public List<Address> AddressList { get; set; }
 
@@ -62,7 +65,7 @@ namespace ACM.BL
         /* Methods */
 
         // Method that validate inserted values.
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
@@ -71,5 +74,7 @@ namespace ACM.BL
 
             return isValid;
         }
+
+        public string log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status {EntityState.ToString()}";
     }
 }

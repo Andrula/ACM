@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FF4A11C8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BLTest", "ACM.BLTest\ACM.BLTest.csproj", "{20EAB58E-294F-409E-9F69-8F2DF2EF7EC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.common", "ACME.common\ACME.common.csproj", "{F06C9223-8537-462D-9170-B39F943DE33B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.CommonTest", "ACME.CommonTest\ACME.CommonTest.csproj", "{0F65F494-06E7-4955-B3F9-85BDD0280E5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{20EAB58E-294F-409E-9F69-8F2DF2EF7EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20EAB58E-294F-409E-9F69-8F2DF2EF7EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20EAB58E-294F-409E-9F69-8F2DF2EF7EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06C9223-8537-462D-9170-B39F943DE33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06C9223-8537-462D-9170-B39F943DE33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06C9223-8537-462D-9170-B39F943DE33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06C9223-8537-462D-9170-B39F943DE33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F65F494-06E7-4955-B3F9-85BDD0280E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F65F494-06E7-4955-B3F9-85BDD0280E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F65F494-06E7-4955-B3F9-85BDD0280E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F65F494-06E7-4955-B3F9-85BDD0280E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{20EAB58E-294F-409E-9F69-8F2DF2EF7EC0} = {FF4A11C8-216B-4200-8481-7A20C24FA2AE}
+		{0F65F494-06E7-4955-B3F9-85BDD0280E5A} = {FF4A11C8-216B-4200-8481-7A20C24FA2AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {410F2D8A-F8FB-4000-A7C8-CABAADAB297B}
