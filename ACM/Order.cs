@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACME.common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM
 {
-    public class Order
+    public class Order : EntityBase, ILoggable
     {
         /* Constructors */
         public Order()
@@ -20,10 +21,20 @@ namespace ACM
         }
 
         /* Fields */
+        public int CustomerId { get; set; }
+        public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; set; }
-        public DateTimeOffset OrderDate { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
+        public int ShippingAddressId { get; set; }
 
-        public bool Validate ()
+
+        public string Log() =>
+            $"{OrderId}: Date: {this.OrderDate.Value.Date} Status: {EntityState}";
+
+        public override string ToString() =>
+            $"{OrderDate.Value.Date} ({OrderId})";
+
+        public override bool Validate()
         {
             var isValid = true;
             // Code to validate

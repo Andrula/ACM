@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACME.common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer : EntityBase
+    public class Customer : EntityBase, ILoggable
     {
         /* Constructors */
         public Customer()
@@ -75,6 +76,6 @@ namespace ACM.BL
             return isValid;
         }
 
-        public string log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status {EntityState.ToString()}";
+        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status {EntityState.ToString()}";
     }
 }

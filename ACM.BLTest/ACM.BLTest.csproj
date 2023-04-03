@@ -54,11 +54,16 @@
     <Compile Include="CustomerRepositoryTest.cs" />
     <Compile Include="ProductRepositoryTest.cs" />
     <Compile Include="OrderRepositoryTest.cs" />
+    <Compile Include="LoggingServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ACME.common\ACME.common.csproj">
+      <Project>{F06C9223-8537-462D-9170-B39F943DE33B}</Project>
+      <Name>ACME.common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ACM\ACM.BL.csproj">
       <Project>{aa526e7e-eff7-4e88-a5dd-bcb72cff9498}</Project>
       <Name>ACM.BL</Name>

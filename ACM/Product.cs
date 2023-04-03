@@ -12,7 +12,7 @@ namespace ACM
     // Constructors
     /// 
 
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product()
         {
@@ -59,7 +59,7 @@ namespace ACM
             return isValid;
         }
 
-        public string log() =>
+        public string Log() =>
             $"{ProductId}: {ProductName} Description: {ProductDescription} Status: {EntityState.ToString()}";
     }
 }
